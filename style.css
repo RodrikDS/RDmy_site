@@ -35,6 +35,24 @@ h1{
   font-size: 1.2rem;
 }
 
+.seccion-descripcion{
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+.texto-negro{
+  color: #0a0a23;
+}
+
+.texto-blanco{
+  color: white;
+}
+
 .seccion-clara{
   color: black;
   background-color: white;
@@ -44,12 +62,10 @@ h1{
   background-color: #f5f6f7;
   max-height: 450px;
   text-align: center;
-
 }
 
 .hero-principal{
   padding: 3rem;
-
 }
 
 .imagen-perfil{
@@ -57,6 +73,7 @@ h1{
   height: 200px;
   margin: 20px;
 }
+
 .hero-principal h2{
   font-size: 1.5rem;
   color: #55718e;
@@ -121,7 +138,71 @@ h1{
   margin: 5px;
 }
 
+.proyectos-recientes{
+  padding: 40px;
+}
 
+.proyectos-recientes img{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0,2s ease;
+}
+
+.proyectos-contenedor{
+  padding-top: 60px;
+  margin-bottom: 40px;  
+}
+
+.overlay{
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor{
+  display: flex;
+}
+
+.overlay i{
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+
+@media  screen and (max-width: 400px) {
+  .overlay p{
+    font-size: 18px;
+  }
+
+  .overlay i{
+    font-size: 40px;
+  }
+  
+}
 
 @media screen and (max-width: 767px){
   .navbar-brand{
